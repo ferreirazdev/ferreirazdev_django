@@ -2,6 +2,10 @@ import { useState } from 'react'
 import styled from 'styled-components';
 import { BiExpandHorizontal } from "react-icons/bi";
 
+interface Props {
+    bar: boolean;
+}
+
 export function Navbar() {
     const [bar, setBar] = useState(false);
     return (
@@ -10,10 +14,9 @@ export function Navbar() {
             <span className='green'><BiExpandHorizontal/></span>
         </Logo>
         <Nav bar={bar}>
-            <span><a href="#home">HOME</a></span>
-            <span><a href="#service">SERVICES</a></span>
-            <span><a href="#project">PROJECTS</a></span>
-            <span><a href="#footer">CONTACT</a></span>
+            <span><a href="#home">INICIO</a></span>
+            <span><a href="#service">SERVIÇOS</a></span>
+            <span><a href="#footer">CONTATO</a></span>
         </Nav>
         <div
             onClick={() => setBar(!bar)}
@@ -25,7 +28,7 @@ export function Navbar() {
     )
 }
 
-const Container = styled.div`
+const Container = styled.div<Props>`
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,7 +85,7 @@ const Logo = styled.div`
     gap: 0.5rem;
     color: #01be96;
     span{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     h1{
         font-weight: 600;
@@ -90,7 +93,7 @@ const Logo = styled.div`
         color: #000;
     }
 `
-const Nav = styled.div`
+const Nav = styled.div<Props>`
     @media(max-width:640px){
         position: fixed;
         display: flex;

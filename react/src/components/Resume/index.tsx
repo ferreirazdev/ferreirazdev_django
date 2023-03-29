@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { Slide } from "react-awesome-reveal";
 import ProfileIMG from "../../assets/profile.jpg"
 
@@ -27,7 +28,7 @@ export function Resume() {
                     </p>
                   </div>
                   
-                  <button>Fale Comigo!</button>
+                  <button>Fale Comigo! <IoLogoWhatsapp /> </button>
                   <Social>
                       <div className="social-icons">
                           <span>

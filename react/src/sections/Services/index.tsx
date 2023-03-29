@@ -2,8 +2,8 @@ import { MdDesignServices } from "react-icons/md";
 import { FiCodesandbox } from "react-icons/fi";
 import { AiFillHdd, AiFillLayout } from "react-icons/ai";
 import styled from "styled-components";
-import Card from "./card";
 import { Slide } from "react-awesome-reveal";
+import Card from "../../components/Card";
 
 export function Services() {
     return (
@@ -48,6 +48,7 @@ export function Services() {
 
 const Container = styled.div`
   width: 100%;
+  max-width: 1280px;
   color: #fff;
   background: #191923;
   margin: 0 auto;

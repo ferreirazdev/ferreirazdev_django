@@ -9,7 +9,7 @@ export function Resume() {
             <Slide direction="left">
               <Texts>
                   <div className="title">
-                    <h1 className="green">Flávio Ferreira</h1> 
+                    <h1>Flávio Ferreira</h1> 
                     <h4>(ferreirazdev)</h4>
                   </div>
                   <h3>Desenvolvedor Full Stack</h3>
